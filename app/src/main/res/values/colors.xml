@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F47C42</color>
+    <color name="colorPrimaryDark">#F85E00</color>
+    <color name="colorAccent">#6198F4</color>
+
+    <!--personal colors-->
+    <color name="grayLight">#F6F6F6</color>
+    <color name="normalGrayText">#1B1B1B</color>
+    <color name="downloadIcon">#F47C42</color>
+    <color name="uploadIcon">#4F8E66</color>
+
+    <color name="endGrapFill">#A4FF6300</color>
+</resources>

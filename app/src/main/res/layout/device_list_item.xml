@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:padding="20dp"
+    android:background="@drawable/device_list_item_background"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/connectionTypeIcon"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@android:color/transparent"
+        app:tint="@color/colorPrimary" />
+
+    <TextView
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/connectionTypeIcon"
+        app:layout_constraintBottom_toTopOf="@id/deviceIP"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/deviceName"
+        android:text="Name"/>
+
+    <TextView
+        app:layout_constraintTop_toBottomOf="@id/deviceName"
+        app:layout_constraintStart_toStartOf="@id/deviceName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/deviceIP"
+        android:text="IP"/>
+
+    <ImageView
+        app:layout_constraintBottom_toBottomOf="@id/dSpeedDevice"
+        app:layout_constraintEnd_toStartOf="@id/dSpeedDevice"
+        app:layout_constraintTop_toTopOf="@id/dSpeedDevice"
+        android:src="@drawable/ic_baseline_arrow_downward_24"
+        android:background="@drawable/round_speed_indicator_background"
+        android:backgroundTint="@color/downloadIcon"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_marginRight="2dp"
+        app:tint="@android:color/white"/>
+    <TextView
+        android:id="@+id/dSpeedDevice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="@color/downloadIcon"
+        app:layout_constraintBottom_toTopOf="@id/uSpeedDevice"
+        android:text="10KB/s"
+        android:textSize="10sp"/>
+    <ImageView
+        app:layout_constraintBottom_toBottomOf="@id/uSpeedDevice"
+        app:layout_constraintEnd_toStartOf="@id/uSpeedDevice"
+        app:layout_constraintTop_toTopOf="@id/uSpeedDevice"
+        android:src="@drawable/ic_baseline_arrow_upward_24"
+        android:background="@drawable/round_speed_indicator_background"
+        android:backgroundTint="@color/uploadIcon"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_marginRight="2dp"
+        app:tint="@android:color/white"/>
+    <TextView
+        android:id="@+id/uSpeedDevice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/uploadIcon"
+        app:layout_constraintTop_toBottomOf="@id/dSpeedDevice"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="10KB/s"
+        android:textSize="10sp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

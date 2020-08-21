@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start"
+        motion:duration="1000">
+       <KeyFrameSet>
+
+           <KeyPosition
+               motion:motionTarget="@+id/chart2"
+               motion:framePosition="33"
+               motion:keyPositionType="pathRelative"
+               motion:percentX="0.1" />
+           <KeyPosition
+               motion:motionTarget="@+id/speedContainer"
+               motion:framePosition="33"
+               motion:keyPositionType="pathRelative"
+               motion:percentX="0.1" />
+       </KeyFrameSet>
+        <OnSwipe motion:dragDirection="dragUp" />
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            android:id="@+id/constraintLayout"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="@id/routerName"
+            android:layout_marginTop="20dp"/>
+        <Constraint
+            android:layout_height="300dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="match_parent"
+            android:id="@+id/chart2" />
+        <Constraint
+            motion:layout_editor_absoluteY="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintBottom_toTopOf="@id/chart2"
+            android:layout_width="match_parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/speedContainer" />
+        <Constraint
+            android:id="@+id/routerName"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="50dp"
+            android:scaleY="1.1"
+            android:scaleX="1.1" />
+    </ConstraintSet>
+</MotionScene>
