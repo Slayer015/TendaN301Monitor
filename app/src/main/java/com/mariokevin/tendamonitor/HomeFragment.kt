@@ -1,4 +1,4 @@
-package com.mariokevin.tendamonitoring
+package com.mariokevin.tendamonitor
 
 import android.content.Context.WIFI_SERVICE
 import android.net.wifi.WifiManager
@@ -11,8 +11,8 @@ import androidx.fragment.app.Fragment
 import com.github.mikephil.charting.data.Entry
 import com.github.mikephil.charting.data.LineData
 import com.github.mikephil.charting.data.LineDataSet
-import com.mariokevin.tendamonitoring.models.DevicesAdapter
-import com.mariokevin.tendamonitoring.util.TendaAPI
+import com.mariokevin.tendamonitor.models.DevicesAdapter
+import com.mariokevin.tendamonitor.util.TendaAPI
 import kotlinx.android.synthetic.main.fragment_home.*
 import kotlinx.android.synthetic.main.fragment_home.view.*
 import org.json.JSONArray

@@ -1,4 +1,4 @@
-package com.mariokevin.tendamonitoring
+package com.mariokevin.tendamonitor
 
 import org.junit.Test
 

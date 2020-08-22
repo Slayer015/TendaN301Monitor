@@ -1,4 +1,4 @@
-package com.mariokevin.tendamonitoring
+package com.mariokevin.tendamonitor
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

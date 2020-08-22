@@ -1,4 +1,4 @@
-package com.mariokevin.tendamonitoring.models
+package com.mariokevin.tendamonitor.models
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -8,7 +8,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.core.content.res.ResourcesCompat
 import androidx.recyclerview.widget.RecyclerView
-import com.mariokevin.tendamonitoring.R
+import com.mariokevin.tendamonitor.R
 import kotlinx.android.synthetic.main.device_list_item.view.*
 import kotlin.math.truncate
 
